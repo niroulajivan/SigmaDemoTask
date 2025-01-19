@@ -1,0 +1,6 @@
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Data\obj\Release\net8.0\SigmaCandidateManagement.Data.csproj.AssemblyReference.cache
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Data\obj\Release\net8.0\SigmaCandidateManagement.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Data\obj\Release\net8.0\SigmaCandidateManagement.Data.AssemblyInfoInputs.cache
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Data\obj\Release\net8.0\SigmaCandidateManagement.Data.AssemblyInfo.cs
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Data\obj\Release\net8.0\SigmaCandidateManagement.Data.csproj.CoreCompileInputs.cache
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Data\obj\Release\net8.0\SigmaCandidateManagement.Data.sourcelink.json

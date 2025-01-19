@@ -1,0 +1,6 @@
+@SigmaCandidateManagement_HostAddress = http://localhost:5128
+
+GET {{SigmaCandidateManagement_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
