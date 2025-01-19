@@ -1,0 +1,13 @@
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\bin\Debug\net8.0\SigmaCandidateManagement.Core.deps.json
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\bin\Debug\net8.0\SigmaCandidateManagement.Core.dll
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\bin\Debug\net8.0\SigmaCandidateManagement.Core.pdb
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\obj\Debug\net8.0\SigmaCandidateManagement.Core.csproj.AssemblyReference.cache
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\obj\Debug\net8.0\SigmaCandidateManagement.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\obj\Debug\net8.0\SigmaCandidateManagement.Core.AssemblyInfoInputs.cache
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\obj\Debug\net8.0\SigmaCandidateManagement.Core.AssemblyInfo.cs
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\obj\Debug\net8.0\SigmaCandidateManagement.Core.csproj.CoreCompileInputs.cache
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\obj\Debug\net8.0\SigmaCandidateManagement.Core.sourcelink.json
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\obj\Debug\net8.0\SigmaCandidateManagement.Core.dll
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\obj\Debug\net8.0\refint\SigmaCandidateManagement.Core.dll
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\obj\Debug\net8.0\SigmaCandidateManagement.Core.pdb
+D:\Projects\SigmaDemoTask\SigmaCandidateManagement.Core\obj\Debug\net8.0\ref\SigmaCandidateManagement.Core.dll
