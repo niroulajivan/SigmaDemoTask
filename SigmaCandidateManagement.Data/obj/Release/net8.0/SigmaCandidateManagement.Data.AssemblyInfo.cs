@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SigmaCandidateManagement.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1b65706583bcb86c31873891ccd0c76f5c3b2d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bf64478b179d758a4a35d6d4c0d0b026b1a78a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("SigmaCandidateManagement.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SigmaCandidateManagement.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
