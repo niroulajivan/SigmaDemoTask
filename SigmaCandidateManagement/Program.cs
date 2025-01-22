@@ -12,8 +12,8 @@ using SigmaCandidateManagement.Data;
 using SigmaCandidateManagement.Data.Repositories;
 using System.Text;
 
-var builder = WebApplication.CreateBuilder(args);
 
+var builder = WebApplication.CreateBuilder(args);
 
 // Configur Database Connection
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -42,29 +42,19 @@ builder.Services.Configure<LoginParam>(builder.Configuration.GetSection("AdminCr
 builder.Services.AddScoped<ITokenService, TokenService>(); // Token Service
 builder.Services.AddRepositoryServices(); // Custom extension to register all repositories
 builder.Services.AddBusinessServices();   // Custom extension to register all business services
-
 builder.Services.AddOtherServices();
-
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+});
 // Build the application
 var app = builder.Build();
 
-// Ensure that the database is created on application start (if not already created)
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    try
-    {
-        var invariantSetting = Environment.GetEnvironmentVariable("DOTNET_SYSTEM_GLOBALIZATION_INVARIANT");
-        Console.WriteLine($"DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: {invariantSetting ?? "Not Set"}");
+    dbContext.Database.Migrate();
 
-        dbContext.Database.EnsureCreated();
-    }
-    catch (Exception ex)
-    {
-        // Handle potential exceptions (e.g., connection issues)
-        var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
-        logger.LogError(ex, "An error occurred while migrating the database.");
-    }
 }
 // Configuring the HTTP request pipeline
 if (app.Environment.IsDevelopment())

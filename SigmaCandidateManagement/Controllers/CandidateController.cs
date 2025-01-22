@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SigmaCandidateManagement.Business.Services;
 using SigmaCandidateManagement.Core.Entities;
 using SigmaCandidateManagement.Core.Entities.Configuration;
 using SigmaCandidateManagement.Core.Interfaces.Services;
@@ -27,16 +28,12 @@ namespace SigmaCandidateManagement.Controllers
         [HttpPost("AddUpdateCandidate")]
         public async Task<IActionResult> AddOrUpdateCandidate(Candidate candidate)
         {
-            // Validate the incoming model (candidate)
+
             if (!ModelState.IsValid)
             {
-                var errors = ModelState.Values
-                    .SelectMany(v => v.Errors)
-                    .Select(e => e.ErrorMessage)
-                    .ToList();
+                var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).ToList().FirstOrDefault();
                 var errorMessage = string.Join(", ", errors);
 
-                // Return a structured error response
                 return BadRequest(new ApiResponse<object>(
                     400,
                     "Failed",
@@ -44,29 +41,16 @@ namespace SigmaCandidateManagement.Controllers
                     errorMessage
                 ));
             }
-            try
-            {
-                // Perform the add or update operation asynchronously
-                var result = await _candidateService.AddOrUpdateCandidateAsync(candidate);
 
-                // Return a success response
-                return Ok(new ApiResponse<object>(
-                    200,
-                    "Success",
-                    result,
-                    ""
-                ));
-            }
-            catch (Exception ex)
-            {
-                // Handle any unexpected errors during the operation
-                return StatusCode(500, new ApiResponse<object>(
-                    500,
-                    "Error",
-                    new { },
-                    $"An error occurred while processing your request: {ex.Message}"
-                ));
-            }
+            // Your logic to create/update the candidate
+            var createdCandidate = await _candidateService.AddOrUpdateCandidateAsync(candidate);
+
+            return Ok(new ApiResponse<object>(
+                200,
+                "Success",
+                createdCandidate,
+                ""
+            ));
         }
 
     }

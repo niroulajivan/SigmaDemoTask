@@ -1,8 +1,10 @@
 ﻿using SigmaCandidateManagement.Core.Entities;
+using SigmaCandidateManagement.Core.Entities.Configuration;
 using SigmaCandidateManagement.Core.Interfaces.Repository;
 using SigmaCandidateManagement.Core.Interfaces.Services;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
