@@ -3,23 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigmaCandidateManagement", "SigmaCandidateManagement.csproj", "{BD106B92-DBAE-4828-9EC1-AFF8F68A6CE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigmaCandidateManagement", "SigmaCandidateManagement.csproj", "{BD106B92-DBAE-4828-9EC1-AFF8F68A6CE4}"
 	ProjectSection(ProjectDependencies) = postProject
 		{BDEA0419-BF50-446D-8860-96B02CEE6343} = {BDEA0419-BF50-446D-8860-96B02CEE6343}
 		{DDB92F8A-40CE-4C56-9DBA-CCA434F4ED25} = {DDB92F8A-40CE-4C56-9DBA-CCA434F4ED25}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigmaCandidateManagement.Core", "..\SigmaCandidateManagement.Core\SigmaCandidateManagement.Core.csproj", "{BDEA0419-BF50-446D-8860-96B02CEE6343}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigmaCandidateManagement.Core", "..\SigmaCandidateManagement.Core\SigmaCandidateManagement.Core.csproj", "{BDEA0419-BF50-446D-8860-96B02CEE6343}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigmaCandidateManagement.Business", "..\SigmaCandidateManagement.Business\SigmaCandidateManagement.Business.csproj", "{DDB92F8A-40CE-4C56-9DBA-CCA434F4ED25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigmaCandidateManagement.Business", "..\SigmaCandidateManagement.Business\SigmaCandidateManagement.Business.csproj", "{DDB92F8A-40CE-4C56-9DBA-CCA434F4ED25}"
 	ProjectSection(ProjectDependencies) = postProject
 		{AC725A58-9680-4BAF-9AAD-DC422BCAA38A} = {AC725A58-9680-4BAF-9AAD-DC422BCAA38A}
 		{BDEA0419-BF50-446D-8860-96B02CEE6343} = {BDEA0419-BF50-446D-8860-96B02CEE6343}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigmaCandidateManagement.Data", "..\SigmaCandidateManagement.Data\SigmaCandidateManagement.Data.csproj", "{AC725A58-9680-4BAF-9AAD-DC422BCAA38A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigmaCandidateManagement.Data", "..\SigmaCandidateManagement.Data\SigmaCandidateManagement.Data.csproj", "{AC725A58-9680-4BAF-9AAD-DC422BCAA38A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{BDEA0419-BF50-446D-8860-96B02CEE6343} = {BDEA0419-BF50-446D-8860-96B02CEE6343}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigmaCandidateManagement.Test", "..\SigmaCandidateManagement.Test\SigmaCandidateManagement.Test.csproj", "{6FF5179B-2636-45D0-A158-FFCEE3B89DFE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD106B92-DBAE-4828-9EC1-AFF8F68A6CE4} = {BD106B92-DBAE-4828-9EC1-AFF8F68A6CE4}
 	EndProjectSection
 EndProject
 Global
@@ -44,6 +49,10 @@ Global
 		{AC725A58-9680-4BAF-9AAD-DC422BCAA38A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC725A58-9680-4BAF-9AAD-DC422BCAA38A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC725A58-9680-4BAF-9AAD-DC422BCAA38A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF5179B-2636-45D0-A158-FFCEE3B89DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF5179B-2636-45D0-A158-FFCEE3B89DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF5179B-2636-45D0-A158-FFCEE3B89DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF5179B-2636-45D0-A158-FFCEE3B89DFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

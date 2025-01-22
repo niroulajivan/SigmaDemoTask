@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SigmaCandidateManagement.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bf64478b179d758a4a35d6d4c0d0b026b1a78a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2de2e60061414135b02f0a9d1aa003f1b2bc7f18")]
 [assembly: System.Reflection.AssemblyProductAttribute("SigmaCandidateManagement.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SigmaCandidateManagement.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

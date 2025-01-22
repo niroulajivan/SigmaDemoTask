@@ -27,6 +27,8 @@ namespace SigmaCandidateManagement.Data.Repositories
             else
             {
                 _context.Entry(existingCandidate).CurrentValues.SetValues(candidate);
+                _context.Entry(existingCandidate).Property(x => x.Id).IsModified = false;
+                _context.Entry(existingCandidate).Property(x => x.Email).IsModified = false;
             }
             await _context.SaveChangesAsync();
         }
